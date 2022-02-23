@@ -14,13 +14,23 @@
 // 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 // Buon lavoro e buon divertimento!
 
-// let areaNumbers = document.querySelector(`.area-numbers`)
 
-for (let i = 0; i < 101; ++i) {
-    // if (i % 3 == 0) {
-    //     areaNumbers.innerHTML += `<div class= "box fizz">${i}</div>`
-    // }
+//Define listNumber
+let listNumber;
 
-    console.log(i)
-    
+//Generate numers from 1 to 100
+for (i = 1; i <= 100; i++) {
+  listNumber = i;
+
+
+  if ((listNumber % 3 == 0) && (listNumber % 5 == 0)) {
+    console.log('FizzBuzz');
+  } else if (listNumber % 3 == 0) {
+    console.log('Fizz');
+  } else if (listNumber % 5 == 0) {
+    console.log('Buzz');
+  } else {
+    console.log(listNumber);
+  }
+
 }
